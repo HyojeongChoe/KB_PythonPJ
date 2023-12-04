@@ -1,1 +1,76 @@
+class 기쁨:
+    def __init__(self):
+        Darling - 걸스데이 https://music.youtube.com/watch?v=eqmy0W30tAA&si=cR0qTfCH2OxKNEMC
+        살짝 설렜어 - 오마이걸 https://music.youtube.com/watch?v=ztmOmJrTF5c&si=dbEC_KbRGP4im3De
+        사랑인가봐 - 김세정 https://music.youtube.com/watch?v=cGJEOa9mJ3U&si=TusRie7vznOfC3vl
+        Feel My Rhythm - 레벨 https://music.youtube.com/watch?v=OXWz_x6-dro&si=_lqRtl5ssTL9bnp2
+        불꽃놀이 - 오마이걸 https://music.youtube.com/watch?v=ueCqdMtVbDo&si=JI2LU8-b28pyRJFS
+        we go - 프미나 https://music.youtube.com/watch?v=qQ3fFC6bw2I&si=416lUtqQBxU3l8BQ
+        LOVEBOMB - 프미나 https://music.youtube.com/watch?v=PucPDc9qJto&si=jrWYmxsazi2h-ntO
 
+        Would u -레드벨벳 https://music.youtube.com/watch?v=SSwTMuHqq9k&si=ztyG3fMTXL4A8Hap
+        나의 오랜 연인에게 - 다비치 https://music.youtube.com/watch?v=Wzwr5AKu0pY&si=H4Y4pROCvquuFcMz
+
+class 슬픔:
+    def __init__(self):
+        사랑하는 법을 몰라서 - ft아일랜드 https://music.youtube.com/watch?v=aLYO-jn_Lt4&si=NECjBlH58imkQw0c
+        사랑했었다 - 이홍기,유회승 https://music.youtube.com/watch?v=lkNgJltBFTQ&si=_jzTplwWW6fU4nxz
+        헤어지자 - 휘인 https://music.youtube.com/watch?v=Eja6bow9d8A&si=xal7lPGY_uFINGQ6
+        잘 있어요 - 태일 https://music.youtube.com/watch?v=XnR9RNNxv-o&si=8vyp8UjFQWI3MrP2
+        I Miss you -소유 https://music.youtube.com/watch?v=XAKL4SR2geQ&si=8_4IXuBEsUI6O3dO
+
+        혼자 - 거미 https://music.youtube.com/watch?v=bGSAyWZXmdM&si=JDqL2Au4COk5J1ov
+        노력 - 박원 https://music.youtube.com/watch?v=oTEwhXKs6zk&si=fATqYxOvZ_7tlC3x
+        
+
+class 분노:
+    def __init__(self):
+        GODS - 뉴진스 https://music.youtube.com/watch?v=jdzKPUhXa-o&si=mVIic6WCdPuE9xYB
+        Tomboy - 여자아이들 https://music.youtube.com/watch?v=aFoqCI75WoY&si=S24L2ob2VW6iHpTi
+        미친거 아니야? - 2pm https://music.youtube.com/watch?v=LW6d7U_zMqw&si=DMTCau46fPo8pmpm
+        멍청이 - 화사 https://music.youtube.com/watch?v=GywLDYmXkjs&si=0AFyDMAjI4tougS3
+        걔 세 - WINNER https://music.youtube.com/watch?v=BB34ePthxUE&si=HCjVSS6iR1cOOSRD
+        가시나 - 선미 https://music.youtube.com/watch?v=FV003QMWhNM&si=yQXekbFA-as2-Wt_
+
+        헤어져줘서 고마워 - 벤 https://music.youtube.com/watch?v=18n19XEHxn4&si=cnZv9BsYmVl1hAYd
+        To.X - 태연 https://music.youtube.com/watch?v=UTOxChG5Ucc&si=uMbo8LBRSkH4BVhm
+        나를 좋아하지 않는 그대에게 https://music.youtube.com/watch?v=_NzcsnLIl1M&si=uqouPjPpjiiVi378
+        
+
+
+class 불안 :
+    def __init__(self):
+        파이팅 해야지 - 부석순 https://music.youtube.com/watch?v=Y4JQokTmBTA&si=7SP7E39Oq7uq_GRr
+        Warning - 김세정 https://music.youtube.com/watch?v=snseqcqmNZo&si=tQtovJoxL-Zu7ax_
+        When This Rain Stops - 웬디 https://music.youtube.com/watch?v=R8ja8lDIBt8&si=bWrEneQZgtpujPbL
+        SMILEY - 예나 https://music.youtube.com/watch?v=2KSWVz2tDEI&si=hY6TUIjZ0uMkjmkx
+        빛 - HOT https://music.youtube.com/watch?v=Ls2rKrCjbqU&si=Tya88E05Oa4ydUOP
+        
+        진심이 담긴 노래 - 케이시 https://music.youtube.com/watch?v=2AZcraZgVBs&si=LwB-TJQraRwKpC_7
+        한숨 - 이하이 https://music.youtube.com/watch?v=JsaW-lHELYo&si=8G3ZfoV3-yxrKXxR
+
+class 심심:
+    def __init__(self):
+        Roly-poly - 티아라 https://music.youtube.com/watch?v=ZlqeBArFee0&si=9ki3vBj9HMefhhAa
+        뿜뿜 - 모모랜드 https://music.youtube.com/watch?v=NLkfJbvMDAA&si=kWEI2aALg_kIyRkx
+        Weekend - 태연 https://music.youtube.com/watch?v=INLFlN-PZq4&si=4oACn-Sl5c82IW9X
+        Perfect Night - 르세라핌 https://music.youtube.com/watch?v=Gqfq_8jPw8Q&si=CEjXtlinPEvjqQ-5
+        SHAKE IT - 씨스타 https://music.youtube.com/watch?v=9GdR-LL4J5o&si=ePFD0A0BL3aHGMqd
+        PARTY - 소녀시대 https://music.youtube.com/watch?v=FByscJG_xVU&si=uPp4CTzBknQDejpi
+
+        별 보러 가자 - 적재 https://music.youtube.com/watch?v=V6YLhXN6OCs&si=4Qm1Fl_DhuaHnRSb
+        별 떨어진다 - D.O https://music.youtube.com/watch?v=hmlIigzYYgk&si=5aZigzBo4laM4slE
+        
+
+class 심란 :
+    def __init__(self):
+        Cool With You - 뉴진스 https://music.youtube.com/watch?v=-jEmhjZr8RE&si=wWKO1-nYbTNyBE4F
+        행복한 척 - 수지 https://music.youtube.com/watch?v=bJTx4ZkQybM&si=XJ6t3hKLTznq4LdB
+        Lonely - 종현 https://music.youtube.com/watch?v=H_SJHRxW2qI&si=_5K5sgTGkSdQbO4r
+        사랑이었다 - 지코 https://music.youtube.com/watch?v=if4m99lM24s&si=tx_kK8uDJpXyVy6-
+        좋은사람 - 해찬 https://music.youtube.com/watch?v=MMJ_uIw02U8&si=UtWJt4iNYfeHs5oU
+        
+        왜 모르니 - 별 https://music.youtube.com/watch?v=eXke_xmPhc8&si=VvU2MQ5Wf6q3j0SZ
+        잘 지내고 있는 거니 - 양다일 https://music.youtube.com/watch?v=8tdVIe5j7MI&si=wjRgSseOFgSTa_x9
+        행복하지 않아 - 김영근 https://music.youtube.com/watch?v=MwaCN38izw4&si=DnWbAonLaYbQFY_n
+        
