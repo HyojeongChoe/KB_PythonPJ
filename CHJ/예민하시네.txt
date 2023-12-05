@@ -25,7 +25,7 @@ class 슬픔:
 
 class 분노:
     def __init__(self):
-        GODS - 뉴진스 https://youtu.be/qr0gvk-_4xA?si=zckgha15Un6FhvbZ
+        ETA - 뉴진스 https://youtu.be/DfX4F5a6JE8?si=cjJCqczu-AjbWtbq
         Tomboy - 여자아이들 https://youtu.be/0wezH4MAncY?si=qnQGed03dZIgA7Ux
         미친거 아니야? - 2pm https://youtu.be/YlqboB1mVnw?si=N_dqtFYGe9TAjsZd
         멍청이 - 화사 https://youtu.be/Uw_dqBFYm8c?si=__5vU7f-p-QbGaHr
@@ -50,6 +50,7 @@ class 불안 :
 
 class 심심:
     def __init__(self):
+        super shy - 뉴진스 https://youtu.be/ArmDp-zijuc?si=_GWsNt456XNaRM1f
         Roly-poly - 티아라 https://youtu.be/tTd9Gna50ls?si=txz2yhdEBc8ygy9t
         뿜뿜 - 모모랜드 https://youtu.be/JQGRg8XBnB4?si=oSQvIzqW7yh2ZYBn
         Weekend - 태연 https://youtu.be/RmuL-BPFi2Q?si=frEyZnWHJ6aZNvmC
