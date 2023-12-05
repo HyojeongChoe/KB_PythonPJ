@@ -1,76 +1,75 @@
 class 기쁨:
     def __init__(self):
-        Darling - 걸스데이 https://music.youtube.com/watch?v=eqmy0W30tAA&si=cR0qTfCH2OxKNEMC
-        살짝 설렜어 - 오마이걸 https://music.youtube.com/watch?v=ztmOmJrTF5c&si=dbEC_KbRGP4im3De
-        사랑인가봐 - 김세정 https://music.youtube.com/watch?v=cGJEOa9mJ3U&si=TusRie7vznOfC3vl
-        Feel My Rhythm - 레벨 https://music.youtube.com/watch?v=OXWz_x6-dro&si=_lqRtl5ssTL9bnp2
-        불꽃놀이 - 오마이걸 https://music.youtube.com/watch?v=ueCqdMtVbDo&si=JI2LU8-b28pyRJFS
-        we go - 프미나 https://music.youtube.com/watch?v=qQ3fFC6bw2I&si=416lUtqQBxU3l8BQ
-        LOVEBOMB - 프미나 https://music.youtube.com/watch?v=PucPDc9qJto&si=jrWYmxsazi2h-ntO
+        Darling - 걸스데이 https://youtu.be/QB4dQcxgJPY?si=hOQxg4tgKkfY0F6s
+        살짝 설렜어 - 오마이걸 https://youtu.be/iDjQSdN_ig8?si=d5jx-lr6tYZfFQQd
+        사랑인가봐 - 김세정 https://youtu.be/V3qCiCv_WIo?si=amzebNvbSdOb7gvI
+        Feel My Rhythm - 레벨 https://youtu.be/R9At2ICm4LQ?si=Q63exDmjOkUvF9Vy
+        불꽃놀이 - 오마이걸 https://youtu.be/RrvdjyIL0fA?si=2Rt6oWxq0XfZBndk
+        we go - 프미나 https://youtu.be/HM6UpQZvbhY?si=mzZ9KBFVZvbMf4uG
+        LOVEBOMB - 프미나 https://youtu.be/-SK6cvkK4c0?si=iovWkSQq1ZlhULB6
 
-        Would u -레드벨벳 https://music.youtube.com/watch?v=SSwTMuHqq9k&si=ztyG3fMTXL4A8Hap
-        나의 오랜 연인에게 - 다비치 https://music.youtube.com/watch?v=Wzwr5AKu0pY&si=H4Y4pROCvquuFcMz
+        Would u -레드벨벳 https://youtu.be/Nu7OmSqHVng?si=u8RsG4UyFI-CC1ru
+        나의 오랜 연인에게 - 다비치 https://youtu.be/vTNuU_mKVnU?si=uAVKE3HlMUUWoqOn
 
 class 슬픔:
     def __init__(self):
-        사랑하는 법을 몰라서 - ft아일랜드 https://music.youtube.com/watch?v=aLYO-jn_Lt4&si=NECjBlH58imkQw0c
-        사랑했었다 - 이홍기,유회승 https://music.youtube.com/watch?v=lkNgJltBFTQ&si=_jzTplwWW6fU4nxz
-        헤어지자 - 휘인 https://music.youtube.com/watch?v=Eja6bow9d8A&si=xal7lPGY_uFINGQ6
-        잘 있어요 - 태일 https://music.youtube.com/watch?v=XnR9RNNxv-o&si=8vyp8UjFQWI3MrP2
-        I Miss you -소유 https://music.youtube.com/watch?v=XAKL4SR2geQ&si=8_4IXuBEsUI6O3dO
+        사랑하는 법을 몰라서 - ft아일랜드 https://youtu.be/6OUFE-4o3M8?si=DrAvT2YzAt29zyAi
+        사랑했었다 - 이홍기,유회승 https://youtu.be/M9ptKKMsee0?si=wb51Xvt_hS2jecIr
+        헤어지자 - 휘인 https://youtu.be/XS0vz7wkyWU?si=wGROeo2JMLrxAdCN
+        잘 있어요 - 태일 https://youtu.be/tMzxABhUrCA?si=zkkYg7fwybxJIJGr
+        I Miss you -소유 https://youtu.be/t9KpdoSxVZU?si=tzwxg84iTtyNClZm
 
-        혼자 - 거미 https://music.youtube.com/watch?v=bGSAyWZXmdM&si=JDqL2Au4COk5J1ov
-        노력 - 박원 https://music.youtube.com/watch?v=oTEwhXKs6zk&si=fATqYxOvZ_7tlC3x
+        혼자 - 거미 https://youtu.be/YrljfReXOUA?si=S87ASGzrv1vjIZVH
+        노력 - 박원 https://youtu.be/0cwZcqTh8IQ?si=fuxbacDJZb41fLxD
         
 
 class 분노:
     def __init__(self):
-        GODS - 뉴진스 https://music.youtube.com/watch?v=jdzKPUhXa-o&si=mVIic6WCdPuE9xYB
-        Tomboy - 여자아이들 https://music.youtube.com/watch?v=aFoqCI75WoY&si=S24L2ob2VW6iHpTi
-        미친거 아니야? - 2pm https://music.youtube.com/watch?v=LW6d7U_zMqw&si=DMTCau46fPo8pmpm
-        멍청이 - 화사 https://music.youtube.com/watch?v=GywLDYmXkjs&si=0AFyDMAjI4tougS3
-        걔 세 - WINNER https://music.youtube.com/watch?v=BB34ePthxUE&si=HCjVSS6iR1cOOSRD
-        가시나 - 선미 https://music.youtube.com/watch?v=FV003QMWhNM&si=yQXekbFA-as2-Wt_
+        GODS - 뉴진스 https://youtu.be/qr0gvk-_4xA?si=zckgha15Un6FhvbZ
+        Tomboy - 여자아이들 https://youtu.be/0wezH4MAncY?si=qnQGed03dZIgA7Ux
+        미친거 아니야? - 2pm https://youtu.be/YlqboB1mVnw?si=N_dqtFYGe9TAjsZd
+        멍청이 - 화사 https://youtu.be/Uw_dqBFYm8c?si=__5vU7f-p-QbGaHr
+        가시나 - 선미 https://youtu.be/hi6N_zl7f1s?si=3F_ly6d0Y2CJEvDt
 
-        헤어져줘서 고마워 - 벤 https://music.youtube.com/watch?v=18n19XEHxn4&si=cnZv9BsYmVl1hAYd
-        To.X - 태연 https://music.youtube.com/watch?v=UTOxChG5Ucc&si=uMbo8LBRSkH4BVhm
-        나를 좋아하지 않는 그대에게 https://music.youtube.com/watch?v=_NzcsnLIl1M&si=uqouPjPpjiiVi378
+        헤어져줘서 고마워 - 벤 
+        To.X - 태연 
+        나를 좋아하지 않는 그대에게 
         
 
 
 class 불안 :
     def __init__(self):
-        파이팅 해야지 - 부석순 https://music.youtube.com/watch?v=Y4JQokTmBTA&si=7SP7E39Oq7uq_GRr
-        Warning - 김세정 https://music.youtube.com/watch?v=snseqcqmNZo&si=tQtovJoxL-Zu7ax_
-        When This Rain Stops - 웬디 https://music.youtube.com/watch?v=R8ja8lDIBt8&si=bWrEneQZgtpujPbL
-        SMILEY - 예나 https://music.youtube.com/watch?v=2KSWVz2tDEI&si=hY6TUIjZ0uMkjmkx
-        빛 - HOT https://music.youtube.com/watch?v=Ls2rKrCjbqU&si=Tya88E05Oa4ydUOP
+        파이팅 해야지 - 부석순 https://youtu.be/b8ch8cbIUxI?si=PzqjPrTh-OG3eXQQ
+        Warning - 김세정 https://youtu.be/2_jo5WzZxic?si=1fkPAzux6ODTU1Hx
+        When This Rain Stops - 웬디 https://youtu.be/yFKhEYrVLvY?si=b-UwlQg-kewotlis
+        SMILEY - 예나 https://youtu.be/ax1niBPPig8?si=UbBeS0ANLMlJusm3
+        빛 - HOT https://youtu.be/tWyIHYvshXI?si=F5FkDU3GtKrUnATs
         
-        진심이 담긴 노래 - 케이시 https://music.youtube.com/watch?v=2AZcraZgVBs&si=LwB-TJQraRwKpC_7
-        한숨 - 이하이 https://music.youtube.com/watch?v=JsaW-lHELYo&si=8G3ZfoV3-yxrKXxR
+        진심이 담긴 노래 - 케이시 https://youtu.be/nuUSmMZXgxI?si=ssJqDRl5Wrnaazc7
+        한숨 - 이하이 https://youtu.be/AT9e7H-X4Pg?si=GWxq0mySmWqGdSly
 
 class 심심:
     def __init__(self):
-        Roly-poly - 티아라 https://music.youtube.com/watch?v=ZlqeBArFee0&si=9ki3vBj9HMefhhAa
-        뿜뿜 - 모모랜드 https://music.youtube.com/watch?v=NLkfJbvMDAA&si=kWEI2aALg_kIyRkx
-        Weekend - 태연 https://music.youtube.com/watch?v=INLFlN-PZq4&si=4oACn-Sl5c82IW9X
-        Perfect Night - 르세라핌 https://music.youtube.com/watch?v=Gqfq_8jPw8Q&si=CEjXtlinPEvjqQ-5
-        SHAKE IT - 씨스타 https://music.youtube.com/watch?v=9GdR-LL4J5o&si=ePFD0A0BL3aHGMqd
-        PARTY - 소녀시대 https://music.youtube.com/watch?v=FByscJG_xVU&si=uPp4CTzBknQDejpi
+        Roly-poly - 티아라 https://youtu.be/tTd9Gna50ls?si=txz2yhdEBc8ygy9t
+        뿜뿜 - 모모랜드 https://youtu.be/JQGRg8XBnB4?si=oSQvIzqW7yh2ZYBn
+        Weekend - 태연 https://youtu.be/RmuL-BPFi2Q?si=frEyZnWHJ6aZNvmC
+        Perfect Night - 르세라핌 https://youtu.be/6AOjwLeMKfk?si=ljXA5TlQkQ2oKcsv
+        SHAKE IT - 씨스타 https://youtu.be/x9-TIy7WPQI?si=l8fCZPgbdC5No_77
+        PARTY - 소녀시대 https://youtu.be/YwN-CN9EjTg?si=ytcI_D9yUH8WLbqH
 
-        별 보러 가자 - 적재 https://music.youtube.com/watch?v=V6YLhXN6OCs&si=4Qm1Fl_DhuaHnRSb
-        별 떨어진다 - D.O https://music.youtube.com/watch?v=hmlIigzYYgk&si=5aZigzBo4laM4slE
+        별 보러 가자 - 적재 https://youtu.be/Mz031oU0Xfw?si=Ac7TJhM41zJKuM27
+        별 떨어진다 - https://youtu.be/_bi4NXB0i70?si=IGyOS3V1NUOO70UP
         
 
 class 심란 :
     def __init__(self):
-        Cool With You - 뉴진스 https://music.youtube.com/watch?v=-jEmhjZr8RE&si=wWKO1-nYbTNyBE4F
-        행복한 척 - 수지 https://music.youtube.com/watch?v=bJTx4ZkQybM&si=XJ6t3hKLTznq4LdB
-        Lonely - 종현 https://music.youtube.com/watch?v=H_SJHRxW2qI&si=_5K5sgTGkSdQbO4r
-        사랑이었다 - 지코 https://music.youtube.com/watch?v=if4m99lM24s&si=tx_kK8uDJpXyVy6-
-        좋은사람 - 해찬 https://music.youtube.com/watch?v=MMJ_uIw02U8&si=UtWJt4iNYfeHs5oU
-        
-        왜 모르니 - 별 https://music.youtube.com/watch?v=eXke_xmPhc8&si=VvU2MQ5Wf6q3j0SZ
-        잘 지내고 있는 거니 - 양다일 https://music.youtube.com/watch?v=8tdVIe5j7MI&si=wjRgSseOFgSTa_x9
-        행복하지 않아 - 김영근 https://music.youtube.com/watch?v=MwaCN38izw4&si=DnWbAonLaYbQFY_n
+        Cool With You - 뉴진스 https://youtu.be/Wb-WCbHXnAw?si=iotxjQ7H3VnsMPOv
+        행복한 척 - 수지 https://youtu.be/FzISASxb-uE?si=-eDB-nfnHlbo-pUI
+        Lonely - 종현 https://youtu.be/zbFCa4OTsPs?si=QIcTK8cleCT_4sJP 
+        사랑이었다 - 지코 https://youtu.be/hajEfPs1ZTk?si=HBDNNIurUB8b8Z2M
+        좋은사람 - 해찬 https://youtu.be/MMJ_uIw02U8?si=iSgSJtaXTEbPLTOI
+
+        왜 모르니 - 별 https://youtu.be/Nc77R1-ANQQ?si=IwvJrK27Q5YaexLJ
+        잘 지내고 있는 거니 - 양다일 https://youtu.be/nVczkuXiur0?si=ubwIIQ8ywrEGKgQW
+        행복하지 않아 - 김영근 https://youtu.be/nLWA1eco5AI?si=xDPGOgaC6zCTaBiv
         
