@@ -1,9 +1,7 @@
 class INDI:
     def emotion(emotion):
         # 인디
-        ans = hip
-        ans = a+joy
-
+        
         indiJoy = [
             # 완벽해 - 레터플로우
             'https://www.youtube.com/watch?v=56vTXXk5PSQ&pp=ygUZ66CI7YSw7ZSM66Gc7JqwIOyZhOuyve2VtA%3D%3D',
