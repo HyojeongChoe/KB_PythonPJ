@@ -1,11 +1,10 @@
+import EMOTION
+import requests, json
 from flask import Flask, request, jsonify, abort
-import requests
-import json
 import sys
 import urllib.request
 
 application = Flask(__name__)
-
 
 @application.route("/")
 def hello():
@@ -14,19 +13,26 @@ def hello():
 @application.route("/WM", methods=["POST"])
 def hello2():
     req = request.get_json()
-    print(req)
+    
     print(req["userRequest"]["utterance"])
     myreq = req["userRequest"]["utterance"]
-
+    
     res = {
         "version": "2.0",
         "template": {
             "outputs": [
                 {
-                    "simpleText":
-                        {
-                            "text": "머"
-                        }
+                   'basicCard': {
+                      'title': '카드 제목',
+                      'description': '카드 설명',
+                      'buttons': [
+                         {
+                           'action': 'webLink',
+                           'label': '추천 노래',
+                           'webLinkUrl': result
+                         }
+                      ]
+                   }
                 }
             ]
         }
@@ -34,4 +40,4 @@ def hello2():
     return jsonify(res)
 
 if __name__ == "__main__":
-    application.run(host='0.0.0.0', port=5000)
+    application.run(host='0.0.0.0', port=80)
