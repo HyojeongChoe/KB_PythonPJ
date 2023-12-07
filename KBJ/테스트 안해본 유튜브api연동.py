@@ -4,11 +4,16 @@ import requests, json
 import urllib.request
 
 app = Flask(__name__)
-
-@application.route("/WM",methods=["POST"])
+# 합치기 전 myreq3만들고 2,3 각각 장르,감정 저장하기
+@application.route("/youtube",methods=["POST"])
 def kakaochatbot():
+    global myreq2
+    global myreq3
     req = request.get_json()
     rm = req["userRequest"]["utterance"]
+    #rm이 검색어 검색어를 입력받아서 할거면 이전에 검색어를 입력하게끔 유도해야함
+    #이전 내용 ex) 장르 - 아이돌, 감정 - 기쁨으로 선택햇던걸 이용하려면 위의 global변수를 사용해서
+    #ex) search = myreq2+myreq3로 또는 rm = (전과 동일)과 같이 저장 해서 사용하게끔 해줘야함
     if rm['content'].startswith('/youtube '):
         search = rm['content'].replace('/youtube ', '')
         youtube_api_key = 'AIzaSyCMcHB5M_2ywcz44iob-cTniG3iHkk_low'
