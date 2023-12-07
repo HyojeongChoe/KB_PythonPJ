@@ -100,7 +100,7 @@ def handle_request3():
                 {
                     'basicCard': {
                         'title': '이런 노래는 어떤가요',
-                        'discript': getTitle,
+                        'description': getTitle,
                         'buttons': [
                             {
                                 'action': 'webLink',
