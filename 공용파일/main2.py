@@ -7,7 +7,8 @@ application = Flask(__name__)
 
 myreq1 = None
 myreq2 = None
-
+emo = EMOTION.EMOTION()
+tit = TITLE.TITLE()
 
 @application.route("/hello", methods=["POST"])
 def handle_request1():
@@ -15,9 +16,6 @@ def handle_request1():
     req = request.get_json()
     print(req["userRequest"]["utterance"])
     myreq1 = req["userRequest"]["utterance"]
-    emo = EMOTION.EMOTION()
-    tit = TITLE.TITLE()
-    # print(myreq1)  # ㅎㅇ
 
     if request.path == "/hello":
         message_text = "오늘은 어떤 음악을 들으실 건가요?"
@@ -54,9 +52,7 @@ def handle_request2():
     req = request.get_json()
     print(req["userRequest"]["utterance"])
     myreq2 = req["userRequest"]["utterance"]
-    emo = EMOTION.EMOTION()
-    tit = TITLE.TITLE()
-
+    
     if request.path == "/category":
         message_text = "오늘은 어떤 음악을 들으실 건가요?"
         quick_replies = [
@@ -91,34 +87,25 @@ def handle_request2():
 def handle_request3():
     global myreq1
     global myreq2
-
     req = request.get_json()
     print(req["userRequest"]["utterance"])
     myreq = req["userRequest"]["utterance"]
-    emo = EMOTION.EMOTION()
-    tit = TITLE.TITLE()
-    url = emo.indiJoy(0)
-    title = tit.indiJoy(0)
-    print(myreq)  # ㅎㅇ
-
-    message_text = "오늘은 이런 노래는 어떤가요?"
-
+    rn = random.choice(1,6)
+    getUrl = emo.indiJoy(rn)
+    getTitle = tit.indiJoy(rn)
     res = {
         "version": "2.0",
         "template": {
             "outputs": [
                 {
-                    "simpleText": {
-                        "text": message_text
-                    },
                     'basicCard': {
-                        'title': title,
-                        'description': '이런 노래는 어떤가요',
+                        'title': '이런 노래는 어떤가요',
+                        'discript': getTitle,
                         'buttons': [
                             {
                                 'action': 'webLink',
                                 'label': '들어보기',
-                                'webLinkUrl': url
+                                'webLinkUrl': getUrl
                             }
                         ]
                     }
