@@ -2,6 +2,7 @@ import EMOTION
 import TITLE
 from flask import Flask, request, jsonify
 import random
+import requests
 import THUMBNAIL
 
 application = Flask(__name__)
@@ -26,7 +27,8 @@ def handle_request1():
             {"messageText": "힙합", "action": "message", "label": "힙합"},
             {"messageText": "아이돌", "action": "message", "label": "아이돌"},
             {"messageText": "인디", "action": "message", "label": "인디"},
-            {"messageText": "발라드", "action": "message", "label": "발라드"}
+            {"messageText": "발라드", "action": "message", "label": "발라드"},
+            {"messageText": "검색할래", "action": "message", "label": "직접입력으로 검색하기"}
         ]
         # else:
         #     return None
@@ -47,7 +49,86 @@ def handle_request1():
         return jsonify(res)
     else:
         return jsonify({"error": "Invalid request path"})
+    
+@application.route("/searching",methods=["POST"])
+def seachingtap():
+    req = request.get_json()
+    myreq = req["userRequest"]["utterance"]
+    
+    res = {
+            "version": "2.0",
+            "template": {
+                "outputs": [
+                    {
+                        "simpleText": {
+                            "text": "검색어를 입력하세요."
+                        }
+                    }
+                ]
+            }
+    }
+    return jsonify(res)
 
+@application.route("/youtube", methods=["POST"])
+def youtube_search():
+    req = request.get_json()
+    search_query = req["userRequest"]["utterance"]
+   # print(search_query.startswith('/youtube '))
+    search_query = '/youtube ' + search_query #학습 방향 협의할 것
+    if search_query.startswith('/youtube '):
+        search_term = search_query.replace('/youtube ', '')
+        youtube_api_key = 'AIzaSyCMcHB5M_2ywcz44iob-cTniG3iHkk_low'
+        try:
+            response = requests.get('https://www.googleapis.com/youtube/v3/search', params={
+                'part': 'snippet',
+                'q': search_term,
+                'key': youtube_api_key
+            })
+            search_results = response.json()['items']
+            if search_results:
+                cards = []
+                for item in search_results:
+                    video_title = item['snippet']['title'].replace('&quot;','"')
+                    video_thumbnail = item['snippet']['thumbnails']['default']['url']
+                    video_id = item['id']['videoId']
+
+                    card = {
+                        'title': video_title,
+                        'description': 'YouTube Video',
+                        #'thumbnail': {
+                        'imageUrl': video_thumbnail,
+                        #},
+                        'link': {
+                            'web': f'https://www.youtube.com/watch?v={video_id}'
+                        }
+                    }
+                    cards.append(card)
+
+                res = {
+                    "version": "2.0",
+                    "template": {
+                        "outputs": [
+                            {
+                                "listCard": {
+                                    "header": {
+                                        "title": f"\"{search_term}\" 검색 결과"
+                                    },
+                                    "items": cards
+                                }
+                            }
+                        ]
+                    }
+                }
+                print(res)
+                #res = res.replace('&quot;','"')
+                return jsonify(res)
+            else:
+                return jsonify({'message': '검색 결과가 없습니다.'})
+        except Exception as e:
+            print('검색엔진 호출 중 오류:', e)
+            return jsonify({'message': '검색엔진 호출 중 오류가 발생했습니다.'}), 500
+
+    return jsonify({'message': ''})
 
 @application.route("/category", methods=["POST"])
 def handle_request2():
@@ -57,7 +138,7 @@ def handle_request2():
     myreq2 = req["userRequest"]["utterance"]
 
     if request.path == "/category":
-        message_text = "오늘은 어떤 음악을 들으실 건가요?"
+        message_text = "오늘의 기분은 어떠신가요?"
         quick_replies = [
             {"messageText": "기쁨", "action": "message", "label": "기쁨"},
             {"messageText": "슬픔", "action": "message", "label": "슬픔"},
@@ -85,7 +166,6 @@ def handle_request2():
     else:
         return jsonify({"error": "Invalid request path"})
 
-
 @application.route("/wm", methods=["POST"])
 def handle_request3():
     global myreq1
@@ -105,7 +185,7 @@ def handle_request3():
                     "outputs": [
                         {
                             'basicCard': {
-                                'title': '이런 노래는 어떤가요',
+                                'title': '이 노래는 어떠세요?',
                                 'description': getTitle,
                                 'thumbnail': {
                                     'imageUrl': getImage
@@ -134,7 +214,7 @@ def handle_request3():
                     "outputs": [
                         {
                             'basicCard': {
-                                'title': '이런 노래는 어떤가요',
+                                'title': '이 노래는 어떠세요?',
                                 'description': getTitle,
                                 'thumbnail': {
                                     'imageUrl': getImage
@@ -162,7 +242,7 @@ def handle_request3():
                     "outputs": [
                         {
                             'basicCard': {
-                                'title': '이런 노래는 어떤가요',
+                                'title': '이 노래는 어떠세요?',
                                 'description': getTitle,
                                 'thumbnail': {
                                     'imageUrl': getImage
@@ -190,7 +270,7 @@ def handle_request3():
                     "outputs": [
                         {
                             'basicCard': {
-                                'title': '이런 노래는 어떤가요',
+                                'title': '이 노래는 어떠세요?',
                                 'description': getTitle,
                                 'thumbnail': {
                                     'imageUrl': getImage
@@ -218,7 +298,7 @@ def handle_request3():
                     "outputs": [
                         {
                             'basicCard': {
-                                'title': '이런 노래는 어떤가요',
+                                'title': '이 노래는 어떠세요?',
                                 'description': getTitle,
                                 'thumbnail': {
                                     'imageUrl': getImage
@@ -247,7 +327,7 @@ def handle_request3():
                     "outputs": [
                         {
                             'basicCard': {
-                                'title': '이런 노래는 어떤가요',
+                                'title': '이 노래는 어떠세요?',
                                 'description': getTitle,
                                 'thumbnail': {
                                     'imageUrl': getImage
@@ -275,7 +355,7 @@ def handle_request3():
                     "outputs": [
                         {
                             'basicCard': {
-                                'title': '이런 노래는 어떤가요',
+                                'title': '이 노래는 어떠세요?',
                                 'description': getTitle,
                                 'thumbnail': {
                                     'imageUrl': getImage
@@ -303,7 +383,7 @@ def handle_request3():
                     "outputs": [
                         {
                             'basicCard': {
-                                'title': '이런 노래는 어떤가요',
+                                'title': '이 노래는 어떠세요?',
                                 'description': getTitle,
                                 'thumbnail': {
                                     'imageUrl': getImage
@@ -331,7 +411,7 @@ def handle_request3():
                     "outputs": [
                         {
                             'basicCard': {
-                                'title': '이런 노래는 어떤가요',
+                                'title': '이 노래는 어떠세요?',
                                 'description': getTitle,
                                 'thumbnail': {
                                     'imageUrl': getImage
@@ -359,7 +439,7 @@ def handle_request3():
                     "outputs": [
                         {
                             'basicCard': {
-                                'title': '이런 노래는 어떤가요',
+                                'title': '이 노래는 어떠세요?',
                                 'description': getTitle,
                                 'thumbnail': {
                                     'imageUrl': getImage
@@ -389,7 +469,7 @@ def handle_request3():
                     "outputs": [
                         {
                             'basicCard': {
-                                'title': '이런 노래는 어떤가요',
+                                'title': '이 노래는 어떠세요?',
                                 'description': getTitle,
                                 'thumbnail': {
                                     'imageUrl': getImage
@@ -417,7 +497,7 @@ def handle_request3():
                     "outputs": [
                         {
                             'basicCard': {
-                                'title': '이런 노래는 어떤가요',
+                                'title': '이 노래는 어떠세요?',
                                 'description': getTitle,
                                 'thumbnail': {
                                     'imageUrl': getImage
@@ -445,7 +525,7 @@ def handle_request3():
                     "outputs": [
                         {
                             'basicCard': {
-                                'title': '이런 노래는 어떤가요',
+                                'title': '이 노래는 어떠세요?',
                                 'description': getTitle,
                                 'thumbnail': {
                                     'imageUrl': getImage
@@ -473,7 +553,7 @@ def handle_request3():
                     "outputs": [
                         {
                             'basicCard': {
-                                'title': '이런 노래는 어떤가요',
+                                'title': '이 노래는 어떠세요?',
                                 'description': getTitle,
                                 'thumbnail': {
                                     'imageUrl': getImage
@@ -501,7 +581,7 @@ def handle_request3():
                     "outputs": [
                         {
                             'basicCard': {
-                                'title': '이런 노래는 어떤가요',
+                                'title': '이 노래는 어떠세요?',
                                 'description': getTitle,
                                 'thumbnail': {
                                     'imageUrl': getImage
@@ -530,7 +610,7 @@ def handle_request3():
                     "outputs": [
                         {
                             'basicCard': {
-                                'title': '이런 노래는 어떤가요',
+                                'title': '이 노래는 어떠세요?',
                                 'description': getTitle,
                                 'thumbnail': {
                                     'imageUrl': getImage
@@ -558,7 +638,7 @@ def handle_request3():
                     "outputs": [
                         {
                             'basicCard': {
-                                'title': '이런 노래는 어떤가요',
+                                'title': '이 노래는 어떠세요?',
                                 'description': getTitle,
                                 'thumbnail': {
                                     'imageUrl': getImage
@@ -586,7 +666,7 @@ def handle_request3():
                     "outputs": [
                         {
                             'basicCard': {
-                                'title': '이런 노래는 어떤가요',
+                                'title': '이 노래는 어떠세요?',
                                 'description': getTitle,
                                 'thumbnail': {
                                     'imageUrl': getImage
@@ -614,7 +694,7 @@ def handle_request3():
                     "outputs": [
                         {
                             'basicCard': {
-                                'title': '이런 노래는 어떤가요',
+                                'title': '이 노래는 어떠세요?',
                                 'description': getTitle,
                                 'thumbnail': {
                                     'imageUrl': getImage
@@ -642,7 +722,7 @@ def handle_request3():
                     "outputs": [
                         {
                             'basicCard': {
-                                'title': '이런 노래는 어떤가요',
+                                'title': '이 노래는 어떠세요?',
                                 'description': getTitle,
                                 'thumbnail': {
                                     'imageUrl': getImage
