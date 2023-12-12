@@ -3,13 +3,7 @@ import random
 class TITLE:
     def __init__(self):
         return None
-
-    def title(self, song, rn):
-        # 인디
-        print('song:' + song)
-        print('rn:')
-        print(rn)
-
+        
     def indiJoy(self, rn):
         indiJoy = [
             '완벽해 - 레터플로우',
