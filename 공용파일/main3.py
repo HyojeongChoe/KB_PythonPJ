@@ -73,8 +73,7 @@ def seachingtap():
 def youtube_search():
     req = request.get_json()
     search_query = req["userRequest"]["utterance"]
-   # print(search_query.startswith('/youtube '))
-    search_query = '/youtube ' + search_query #학습 방향 협의할 것
+    search_query = '/youtube ' + search_query 
     if search_query.startswith('/youtube '):
         search_term = search_query.replace('/youtube ', '')
         youtube_api_key = 'AIzaSyCMcHB5M_2ywcz44iob-cTniG3iHkk_low'
